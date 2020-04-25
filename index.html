@@ -1,0 +1,94 @@
+<!--HTML is the standard markup language for creating Web pages.
+HTML stands for Hyper Text Markup Language
+HTML describes the structure of a Web page
+HTML consists of a series of elements
+HTML elements tell the browser how to display the content
+HTML elements are represented by tags
+HTML tags label pieces of content such as "heading", "paragraph", "table", and so on
+Browsers do not display the HTML tags, but use them to render the content of the page.
+An HTML element usually consists of a start tag and an end tag, with the content inserted in between:
+The HTML element is everything from the start tag to the end tag:
+HTML elements with no content are called empty elements. 
+Empty elements do not have an end tag, such as the <br> element (which indicates a line break).
+Attributes provide additional information about HTML elements.
+All HTML elements can have attributes
+Attributes provide additional information about an element
+Attributes are always specified in the start tag
+Attributes usually come in name/value pairs like: name="value"-->
+<!-- We use command and forward slash as a shortcut to make a comment. -->
+
+
+<!--This Tells the browser what version of HTML is being used. -->
+<!DOCTYPE html>
+<!--This is the root element of the HTML page which has the language 
+attribute to show that our document is in english.-->
+<html lang="en">
+  <!--This is the HTML head element. This element acts as a container 
+  for all the stuff you want to include on the HTML page, 
+  that isn't the content you are showing to your page's viewers. 
+  It is also known as a child element element. This is because it is nested in
+  the html root element above and is therefore a child of it.
+  It includes things like keywords 
+  and a page description that you want to appear in search results, 
+  CSS to style our content, 
+  character set declarations, and more. -->
+  <head>
+    <!-- This is an HTML metatag is a tag that defines information about our file.
+    This element specifies the character set for your document to UTF-8,
+    which includes most characters from the vast majority of human written languages. 
+    Essentially, it can now handle any textual content you might put on it.-->
+    <meta charset="UTF-8" />
+    <!--This is a meta description tag. It gives a description for our website.
+    Inside the tags we have attributes such as name and content.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--This is the title element.This sets the title of your page, 
+    which is the title that appears in the browser tab the page is loaded in, 
+    and is used to describe the page when you bookmark/favorite it.-->
+    <title>This is my webpage.</title>
+  <!--This is the end tag of our head element.-->
+  </head>
+  <!--This is the body element. This contains all the content that you want to show to web users
+  when they visit your page, whether that's text, images, videos, games, playable audio tracks, 
+  or whatever else. The body is also a child element of the root element which is the html element.
+  This is due to the fact that it is nested inside the html element.-->
+  <body>
+    <!--Inside the body we have our headng element with the content.
+    <h1> defines the most important heading. <h6> defines the least important heading.
+    The heading element is the grandchild of the root element which is html. 
+    The reason is because it is nested inside the child of the root which makes it the grandchild.-->
+    <h1>This is heading 1</h1>
+    <h2>This is heading 2</h2>
+    <h3>This is heading 3</h3>
+    <h4>This is heading 4</h4>
+    <h5>This is heading 5</h5>
+    <h6>This is heading 6</h6>
+    <!--This is a paragraph tag that allows us to write more info.
+    The paragraph is also a grandchild of the root element which is html.-->
+    <p>I am creating a webpage with HTML!</p>
+    <!--If we would like to use dummy text to hold the place of where we would like to 
+    place content for our paragraph while were still deciding, we can use the keyword 'lorem'
+    from emmet and we can even put the number of words we would like to have included in our dummy 
+    text next the word lorem. The word would be placed betwee our two paragraph elements.-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Non blanditiis fugiat esse ab, sunt nulla! 
+      Quae officia, porro aspernatur illo consequatur id beatae itaque adipisci! 
+      Earum nam id sapiente quam.</p>
+    <!--We can also use the break element on an empty line without closing it known as an empty element-->
+    <p>This is how to <br> use a break in a line.</p>
+    <!--We can stylize content within our paragraphs by using other tags for bolding a word or italicizing it.-->
+    <p>This is another <b> <i>paragraph.</i> </b> </p>
+    <!--We can use the break tag to create a break in our paragraph that lets us go to the next line.-->
+    </br>
+    <!--This is a horizontal line tag that we can use to break up our text or split it.-->
+    <hr />
+    <!--We can also use other tags to make text bigger or smaller.-->
+    <p><big>Big</big> <small>Small</small> </p>
+    <!-- There are two tags used for subsript and Superscript shown below. -->
+    <p>Water is also known as H<sub>2</sub>O chemically.</p>
+    <p>I will come in <sup>1st</sup> place at the game. </p>
+    <!-- There are many tags used for emphasis and importance such as for underlining, italicizing, and boldening.-->
+    <p><b>We</b> <i>are not</i> <u>amused!</u></p>
+  <!--This is the closing/end tag to our body element.-->  
+  </body>
+<!--This is the end tag to our html element.-->
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+      <h3>Image of Code!</h3>
+    <!--In HTML, images are defined with the <img> tag.
+
+    The <img> tag is empty, it contains attributes only, and does not have a closing tag.
+
+    The src attribute specifies the URL (web address) of the image:
+    The alt attribute provides an alternate text for an image, 
+    if the user for some reason cannot view it (because of slow connection, 
+    an error in the src attribute, or if the user uses a screen reader).
+
+    The value of the alt attribute should describe the image:
+    If a browser cannot find an image, it will display the value of the alt attribute:
+    Note: The alt attribute is required. A web page will not validate correctly without it.
+    If the image is saved in the same folder as the html file you are worling on then 
+    to access it all you need to do is between the quotation marks where it says source 
+    you put a forward slash and it will autogenertate the image path for you.
+    We can use the width and height attribute to modify the sixe of our image in the webpage.-->
+    <img src="/First pexels photo.jpeg" alt="Coding" width= "128" height="128" />
+    <h1>Second image of code.</h1>
+    <!--We can also specify image height and width by using the style attribute.
+    The style attribute is recommended to use because it can be adjusted by using px.
+    It prevents styles sheets from changing the size of images: -->
+    <img src="/Second pexels photo.jpeg" alt="Code" style="width: 100px; height:100px;">
+    <!--We can also use animated images in our image element with the source attribute.-->
+    <h2>This is a gif image using the src attribute and style attribute</h2>
+    <img src="/Coding Gif.gif" alt="Coding Gif" style="width: auto; height: auto;">
+
+    <!-- This shows how to make images float to the right ans to the left of text.
+    We  Use the CSS float property to let the image float to the right or to the left of a text:-->
+    <p><img src="/Mr. Krabs.gif" alt="Mr. Krabs" style="float: left; width: 42px; height: 42px;">
+    <strong>This is an example of an image floating to the left of a text.</strong> </p>
+    <br>
+    <hr>
+    <img src="/Mr. Krabs.gif" alt="Mr. Krabs" style="float: right; width: 45px; height: 45px;">
+    <strong>This is an example of an image floating to the right of a text.</strong> </p>
+
+    <!-- This is an example of displaying an image as a link using the img tag inside the
+    <a> tag. Inside the <a> tag the href attribute is used to access the link to the site.
+    The image is then formatted as it normally is using the src, alt, and style attributes.
+    Note: border:0; is added to prevent IE9 (and earlier) from displaying a border around 
+    the image (when the image is a link). This is added to the end of the style attribute.-->
+    <h3>Image as a link</h3>
+    <p>If you click on this image it will link you to a site</p>
+    <a href="https://github.com/"><img src="/GitHub gif.gif" alt="GitHub" 
+    style="width: 42px; height: 42px; border: 0;"></a>
+
+    <!-- This is how to annotate images with figures and figure captions using the 
+    <figure> and <figurecaption> elements The <figcaption> element tells browsers, 
+    and assistive technology that the caption describes the other content of the <figure> element.-->
+    <figure>
+        <img src="/Dinosaur gif.gif" alt="Gif of a Dinosaur"
+        width="400" height="350">
+        <figcaption>A dinosaur gif with a caption at the bottom. </figcaption>
+    </figure>
+    
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!-- Links are found in nearly all web pages. Links allow users to click their way from page to page.
+HTML links are hyperlinks. You can click on a link and jump to another document.
+When you move the mouse over a link, the mouse arrow will turn into a little hand.
+Note: A link does not have to be text. It can be an image or any other HTML element. 
+Without a forward slash at the end of subfolder addresses, you might generate two requests to the server. 
+Many servers will automatically add a forward slash to the end of the address, and then create a new request.-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Links in HTML5</title>
+  </head>
+  <body>
+    <!-- This is how links are set up internally within our project:
+    First we create a new html page called about.html and use a <a> tag to define it
+    its href attribute will link back to this page which is the homepage. 
+    This page will use it's own <a> tag to refer to the about.html page.-->
+    <h1>This is an internal link:</h1>
+    <a href="/bookmarks.html"> Click this to navigate here.</a>
+
+    <!-- Hyperlinks are defined with the HTML <a> tag:
+    The href attribute specifies the destination address
+    Clicking on the link text will send you to the specified address.-->
+    <h2>Github links:</h2>
+    <p>
+      <a href="https://github.com/Khalid718/Khalid718.github.io">
+        Visit my Github site by clicking this link.
+      </a>
+    </p>
+
+    <!-- The target attribute specifies where to open the linked document. 
+    The target attribute can have one of the following values:
+
+    _blank - Opens the linked document in a new window or tab
+    _self - Opens the linked document in the same window/tab as it was clicked (this is default)
+    _parent - Opens the linked document in the parent frame
+    _top - Opens the linked document in the full body of the window
+    framename - Opens the linked document in a named frame
+    This example will open the linked document in a new browser window/tab:-->
+    <h3>Using the _blank value:</h3>
+    <a href="https://www.instagram.com/coding.disciple/" target="_blank">
+      Visit this instagram page.</a
+    >
+
+    <!-- This example will open the linked document in the same window/tab: -->
+    <h3>Using the _self value:</h3>
+    <a href="https://www.instagram.com/coding.disciple/" target="_self">
+      Visit this instagram page.</a
+    >
+
+    <!-- This example will open the linked document the parent frame: -->
+    <h3>Using the _parent value:</h3>
+    <a href="https://www.instagram.com/coding.disciple/" target="_parent">
+      Visit this instagram page.</a
+    >
+
+    <!-- This example will open the linked document a named frame: 
+    Tip: If your webpage is locked in a frame, you can use target="_top" to break out of the frame:-->
+    <h3>Using the _name value:</h3>
+    <a href="https://www.instagram.com/coding.disciple/" target="_name">
+      Visit this instagram page.</a
+    >
+
+    <!-- The title attribute specifies extra information about an element. 
+    The information is most often shown as a tooltip text when the mouse moves over the element. -->
+    <h2>Link Titles:</h2>
+    <a href="https://kfadlabi38.wixsite.com/website" title="My webisite">
+      Visit my webisite!</a
+    >
+  </body>
+</html>

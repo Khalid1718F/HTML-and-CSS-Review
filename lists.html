@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lists in HTML:</title>
+  </head>
+  <body>
+    <!-- There are two sorts of lists in HTML: Ordered & Unordered.
+    An unordered list starts with the <ul> tag and each item on the list starts with the <li> tag.
+    These items will be markedwith small black bullets by default but can be changed. -->
+    <h1>An Unordered List In HTML:</h1>
+    <ul>
+      <li>Third</li>
+      <li>First</li>
+      <li>Second</li>
+    </ul>
+
+    <!-- An ordered list in HTML starts with the <ol> tag and the attribute type defines the item marker. 
+        type="1"	The list items will be numbered with numbers (default)
+        type="A"	The list items will be numbered with uppercase letters
+        type="a"	The list items will be numbered with lowercase letters
+        type="I"	The list items will be numbered with uppercase roman numbers
+        type="i"	The list items will be numbered with lowercase roman numbers-->
+    <h2>An ordered list in HTML:</h2>
+    <ol type="1">
+      <li>Go east 50 meters.</li>
+      <li>Then turn left.</li>
+      <li>Then go another 80 meters and turn right.</li>
+    </ol>
+
+    <ol type="A">
+      <li>Go west 80 meters.</li>
+      <li>Then turn right.</li>
+      <li>Then go another 60 meters and turn left.</li>
+    </ol>
+
+    <!-- HTML also supports description lists. A description list is a list of terms, with a description of each term.
+    The <dl> tag defines the description list, the <dt> tag defines the term (name), and the <dd> tag describes each term: -->
+    <h3>Hot beverage list.</h3>
+    <dl>
+      <dt>coffee</dt>
+      <dd>black</dd>
+      <dd>Milk</dd>
+      <dd>2 sugars</dd>
+      <dt>Tea</dt>
+      <dd>Milk</dd>
+      <dd>1 sugar</dd>
+      <dd>green</dd>
+    </dl>
+
+    <!-- By default, an ordered list will start counting from 1. 
+    If you want to start counting from a specified number, you can use the start attribute -->
+    <h3>Months with control list countng.</h3>
+    <ol start="10">
+      <li>October</li>
+      <li>Novemeber</li>
+      <li>December</li>
+    </ol>
+  </body>
+</html>
